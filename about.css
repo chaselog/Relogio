@@ -77,3 +77,133 @@
     display: flex;
     margin-top: 60px;
 }
+
+
+
+.header{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    min-height: 30px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #1A1714;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+    background-color: #9A6B3F;
+
+    transition: width 0.3s ease;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+.nav-bar a:hover {
+    color: #9A6B3F;
+}
+.search{
+    height: 35px;
+    width: 250px;
+    border: 1px solid;
+    border-color:#9A6B3F ;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.search-sec{
+    gap: 10px;
+}
+.favourite {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.favourite input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.favourite svg {
+    width: 26px;
+    height: 26px;
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 1.5;
+    transition: fill 0.2s, stroke 0.2s;
+}
+
+
+.favourite input:checked + svg {
+    fill: red;
+    stroke: red;
+}
+
+.favourite input:focus-visible + svg {
+    outline: 2px solid #333;
+    outline-offset: 4px;
+}
+
+.fa-magnifying-glass-minus{
+    color: #1A1714;
+}
+
+.f-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.news button{
+    color: white;
+}
+.email{
+    height: 35px;
+    width: 300px;
+}
+.subscribe{
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.subscribe:hover {
+    background-color: #9A6B3F;
+}
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin-in, .fa-youtube, .fa-tiktok, .fa-linkedin{
+    color: black;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
