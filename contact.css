@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.everything-cnt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px;
+    
+}
+.contact-title{
+    margin-bottom: 15px;
+}
+.contact-title h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.medium{
+    display: flex;
+    flex-direction: column;
+}
+.contact-email, .address, .contact-tel{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.fa-envelope, .fa-location-dot, .fa-phone{
+    font-size: 40px;
+    border-radius: 50%; 
+}
+.contact-content{
+    gap: 50px;
+}
+.media{
+    margin-top: 40px;
+}
+.contact-form{
+    background-color: white;
+    height: 350px;
+    width: 380px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+.txt-needed{
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+}
+.msg-needed{
+    width: 300px;
+    height: 70px;
+    cursor: pointer;
+}
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin-in, .fa-youtube, .fa-tiktok{
+    font-size: 20px;
+}
+.sentbtn{
+    height: 45px;
+    width: 200px;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #8b6335;
+    margin-left: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.sentbtn:hover{
+    background-color: #7A512B;
+}
