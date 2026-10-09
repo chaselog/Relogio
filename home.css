@@ -11,6 +11,10 @@
     justify-content: center;
     gap: 85px;
     min-height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
 }
 
 .nav-bar{
