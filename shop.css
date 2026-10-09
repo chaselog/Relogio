@@ -310,6 +310,11 @@ input[type="range"] {
     margin-left: 10px;
     margin-top: 10px;
 }
+
+.fa-star{
+    color: orange;
+}
+
 .cart{
     display: flex;
     justify-content: space-between;
